@@ -1,0 +1,28 @@
+span {
+	font-weight: bold;
+}
+#ABB {
+	color: red;
+}
+h2 {
+	text-decoration: underline;
+}
+label {
+	font-size: 2.25em;
+}
+#button, #reset, #input {
+	font-size: 1.5em;
+}
+
+/* Custom radio button - worked for Mozilla and Edge, may not work for Chrome or Chromium */
+input[type="radio"] {
+	appearance: none;
+	font-size: 1.5em;
+	border: 3px solid #F00;
+	width: 20px;
+	height: 20px;
+	transition: 0.1s all linear;
+}
+input[type="radio"]:checked {
+	border: 6px solid #F00;
+}

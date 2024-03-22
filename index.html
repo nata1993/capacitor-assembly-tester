@@ -1,0 +1,43 @@
+<!doctype html>
+<html id="html">
+	<head>
+		<title>ABB - Capacitor scanner</title>
+
+		<link href="style.css" rel="stylesheet" />
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1><span id="ABB">ABB</span> - NSP capacitor material scan checker</h1>
+		<hr>
+
+		<h2>R7 capacitor bank</h2>
+		<input id="R7-49811" type="radio" name="capacitor_type" onclick="Focus_on_input();" checked />
+		<label for="capacitor_type">3AUA0000049811 - 4pc 64410504 <span>5700&mu;F 400V</span></label>
+		<br>
+		<input id="R7-49834" type="radio" name="capacitor_type" onclick="Focus_on_input();" />
+		<label for="capacitor_type">3AUA0000049834 - 3pc 64410521 <span>8600&mu;F 385V</span></label>
+		<br>
+		<input id="R7-50248" type="radio" name="capacitor_type" onclick="Focus_on_input();" />
+		<label for="capacitor_type">3AUA0000050248 - 3pc 64650581 <span>8600&mu;F 385V</span> + 1pc 64650581 <span>430&mu;F 1000V</span></label>
+
+		<h2>R8 capacitor bank</h2>
+		<input id="R8-49823" type="radio" name="capacitor_type" onclick="Focus_on_input();" />
+		<label for="capacitor_type">3AUA0000049823 - <span>10pc</span> 64410512 <span>4100&mu;F 400V</span></label>
+		<br>
+		<input id="R8-49829" type="radio" name="capacitor_type" onclick="Focus_on_input();" />
+		<label for="capacitor_type">3AUA0000049829 - <span>14pc</span> 64410512 <span>4100&mu;F 400V</span></label>
+		<br>
+		<input id="R8-50269" type="radio" name="capacitor_type" onclick="Focus_on_input();" />
+		<label for="capacitor_type">3AUA0000050269 - <span>12pc</span> 64410539 <span>4600&mu;F 385V</span></label>
+		<br>
+		<input id="R8-50271" type="radio" name="capacitor_type" onclick="Focus_on_input();" />
+		<label for="capacitor_type">3AUA0000050271 - <span>15pc</span> 64410539 <span>4600&mu;F 385V</span></label>
+		<br><br>
+		<hr>
+
+		<label for="#input">Capacitor SN label:</label>
+		<input id="input" type="text" autofocus />
+		<button id="button" type="submit" onclick="Check_radio_input()">Check</button>
+		<button id="reset" onclick="Reset_input()">Reset</button>
+	</body>
+</html>
