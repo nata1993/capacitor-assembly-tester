@@ -36,7 +36,6 @@ th, td {
 	font-size: 0.75em;
 }
 
-/* Custom radio button - worked for Mozilla and Edge, may not work for Chrome or Chromium */
 input[type="radio"] {
 	appearance: none;
 	border: 3px solid #F00;
