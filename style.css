@@ -1,23 +1,44 @@
+body {
+	font-size: 1.5em;
+	text-align: center;
+}
 span {
 	font-weight: bold;
 }
 #ABB {
 	color: red;
 }
-h2 {
-	text-decoration: underline;
+h1 {
+	margin: 0px;
 }
-label {
-	font-size: 2.25em;
+h3 {
+	text-decoration: underline;
+	text-align: left;
+	margin-bottom: 5px;
+}
+p {
+	padding: 2px;
+	margin: 5px;
+}
+table {
+	border: solid 3px #000;
+	border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+}
+th {
+	background-color: rgb(252, 170, 170);
+}
+th, td {
+	border: 3px solid #000;
 }
 #button, #reset, #input {
-	font-size: 1.5em;
+	font-size: 0.75em;
 }
 
 /* Custom radio button - worked for Mozilla and Edge, may not work for Chrome or Chromium */
 input[type="radio"] {
 	appearance: none;
-	font-size: 1.5em;
 	border: 3px solid #F00;
 	width: 20px;
 	height: 20px;
