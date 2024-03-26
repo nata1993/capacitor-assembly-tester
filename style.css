@@ -39,10 +39,10 @@ th, td {
 input[type="radio"] {
 	appearance: none;
 	border: 3px solid #F00;
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	transition: 0.1s all linear;
 }
 input[type="radio"]:checked {
-	border: 6px solid #F00;
+	border: 7px solid #F00;
 }
