@@ -42,7 +42,12 @@ input[type="radio"] {
 	width: 25px;
 	height: 25px;
 	transition: 0.1s all linear;
+	margin: 0px;
+	vertical-align: middle;
 }
 input[type="radio"]:checked {
 	border: 7px solid #F00;
+}
+label {
+	vertical-align: middle;
 }
