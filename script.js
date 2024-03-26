@@ -62,20 +62,21 @@ function Check_material_code_of_capacitor_bank (i_value, r_i_value) {
 	const u = "\u03BC";
 
 	let truncated_value = i_value.substring(0, 8);
-	switch (truncated_value) {	
+
+	switch (truncated_value) {
 		// R7
 		case bank_type1:
 			if (r_i_value == "3AUA0000049811") {
-				alert(`4PC ${a} 5700${u}F 400V - OK!`);
+				alert(`4PC ${bank_type1} 5700${u}F 400V - OK!`);
 			} else {
 				Alert_mismatch();
 			}
 		break;
 		case bank_type2:
 			if (r_i_value == "3AUA0000049834") {
-				alert(`3PC ${b} 8600${u}F 385V - OK!`);
+				alert(`3PC ${bank_type2} 8600${u}F 385V - OK!`);
 			} else if (r_i_value == "3AUA0000050248") {
-				alert(`3PC ${b} 8600${u}F 385V + 1PC ${c} 430${u}F 1000V! - OK!`);
+				alert(`3PC ${bank_type2} 8600${u}F 385V + 1PC ${bank_type3} 430${u}F 1000V! - OK!`);
 			} else {
 				Alert_mismatch();
 			}
@@ -84,18 +85,18 @@ function Check_material_code_of_capacitor_bank (i_value, r_i_value) {
 		// R8
 		case bank_type4:
 			if (r_i_value == "3AUA0000049823") {
-				alert(`10PC ${d} 4100${u}F 400V - OK!`);
+				alert(`10PC ${bank_type4} 4100${u}F 400V - OK!`);
 			} else if (r_i_value == "3AUA0000049829") {
-				alert(`14PC ${d} 4100${u}F 400V - OK!`);
+				alert(`14PC ${bank_type4} 4100${u}F 400V - OK!`);
 			} else {
 				Alert_mismatch();
 			}
 		break;
-		case bank_type4:
+		case bank_type5:
 			if (r_i_value == "3AUA0000050269") {
-				alert(`12PC ${e}  4600${u}F 385V - OK!`);
+				alert(`12PC ${bank_type5}  4600${u}F 385V - OK!`);
 			} else if (r_i_value == "3AUA0000050271") {
-				alert(`15PC ${e}  4600${u}F 385V - OK!`);
+				alert(`15PC ${bank_type5}  4600${u}F 385V - OK!`);
 			} else {
 				Alert_mismatch();
 			}
