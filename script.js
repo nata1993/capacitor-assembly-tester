@@ -48,7 +48,7 @@ function Check_radio_input () {
 	let input_value = document.getElementById("input").value;
 	input_value = input_value.replace(/\s/g, "")
 	if (input_value == null || input_value == "") {
-		alert("NO INPUT!");
+		Alert_window_open("NO INPUT!", false);
 	}
 	else {
 		Check_material_code_of_capacitor_bank(input_value, radio_input_value);
@@ -67,16 +67,16 @@ function Check_material_code_of_capacitor_bank (i_value, r_i_value) {
 		// R7
 		case bank_type1:
 			if (r_i_value == "3AUA0000049811") {
-				alert(`4PC ${bank_type1} 5700${u}F 400V - OK!`);
+				Alert_window_open(`4PC - ${bank_type1} 5700${u}F 400V - OK!`, true);
 			} else {
 				Alert_mismatch();
 			}
 		break;
 		case bank_type2:
 			if (r_i_value == "3AUA0000049834") {
-				alert(`3PC ${bank_type2} 8600${u}F 385V - OK!`);
+				Alert_window_open(`3PC - ${bank_type2} 8600${u}F 385V - OK!`, true);
 			} else if (r_i_value == "3AUA0000050248") {
-				alert(`3PC ${bank_type2} 8600${u}F 385V + 1PC ${bank_type3} 430${u}F 1000V! - OK!`);
+				Alert_window_open(`3PC - ${bank_type2} 8600${u}F 385V + 1PC - ${bank_type3} 430${u}F 1000V! - OK!`, true);
 			} else {
 				Alert_mismatch();
 			}
@@ -85,24 +85,24 @@ function Check_material_code_of_capacitor_bank (i_value, r_i_value) {
 		// R8
 		case bank_type4:
 			if (r_i_value == "3AUA0000049823") {
-				alert(`10PC ${bank_type4} 4100${u}F 400V - OK!`);
+				Alert_window_open(`10PC - ${bank_type4} 4100${u}F 400V - OK!`, true);
 			} else if (r_i_value == "3AUA0000049829") {
-				alert(`14PC ${bank_type4} 4100${u}F 400V - OK!`);
+				Alert_window_open(`14PC - ${bank_type4} 4100${u}F 400V - OK!`, true);
 			} else {
 				Alert_mismatch();
 			}
 		break;
 		case bank_type5:
 			if (r_i_value == "3AUA0000050269") {
-				alert(`12PC ${bank_type5}  4600${u}F 385V - OK!`);
+				Alert_window_open(`12PC - ${bank_type5}  4600${u}F 385V - OK!`, true);
 			} else if (r_i_value == "3AUA0000050271") {
-				alert(`15PC ${bank_type5}  4600${u}F 385V - OK!`);
+				Alert_window_open(`15PC - ${bank_type5}  4600${u}F 385V - OK!`, true);
 			} else {
 				Alert_mismatch();
 			}
 		break;
 		default:
-			alert("Incorrect input!");
+			Alert_window_open("INCORRECT INPUT!", false);
 	}
 	Focus_on_input();
 }
@@ -118,7 +118,7 @@ function Focus_on_input () {
 
 // Alert for mismatch
 function Alert_mismatch () {
-	alert("Required material code or material mismatch!");
+	Alert_window_open("Required material code or material mismatch!", false);
 }
 
 // Event applier
@@ -140,4 +140,21 @@ function Apply_event_listeners () {
 			Focus_on_input();
 		}
 	}
+}
+
+function Alert_window_open (text, ok_nok) {
+	const alert_window = document.getElementById("alert_window_container");
+	alert_window.style.display = "block";
+	document.getElementById("alert_window_text").innerText = text;
+
+	const alert_window_content = document.getElementById("alert_window_content");
+	if(ok_nok) {
+		alert_window_content.style.backgroundColor = "rgb(138, 248, 118)";
+	} else {
+		alert_window_content.style.backgroundColor = "rgb(252, 170, 170)";
+	}
+}
+function Alert_window_close () {
+	const alert_window = document.getElementById("alert_window_container");
+	alert_window.style.display = "none";
 }
