@@ -1,4 +1,7 @@
 /* big nut design by James Tauber */
+#R8_b_nut_top_view {
+    display: inline-block;
+}
 #R8_b_nut_outer_ring {
     display: inline-block;
     height: 65px;
@@ -41,6 +44,26 @@
     background-color: white;
     border-radius: 50%;
     display: inline-block;
+}
+
+#R8_b_nut_side_view {
+    display: inline-block;
+}
+#R8_b_nut_side_view_press_washer {
+    position: relative;
+    border-top: 32.5px solid transparent;
+    border-left: 18px solid black;
+    border-bottom: 32.5px solid transparent;
+}
+#R8_b_nut_side_view_head {
+    position: absolute;
+    background-color: grey;
+    width: 15px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0px 0px -12px;
+    border-radius: 3px;
 }
 
 /* combined bolt design */
@@ -116,7 +139,6 @@
     margin: -14px 0px 0px -14px;
     background-color: grey;
     border-radius: 50%;
-    display: inline-block;
 }
 #R8_kombi_top_torx_symbol {
     position: absolute;
@@ -125,8 +147,10 @@
 }
 
 /* small nut design with James Tauber method */
-#R8_s_nut_outer_ring  {
+#R8_s_nut_top_view {
     display: inline-block;
+}
+#R8_s_nut_outer_ring  {
     height: 45px;
     width: 45px;
     background-color: black;
@@ -169,7 +193,30 @@
     display: inline-block;
 }
 
+#R8_s_nut_side_view {
+    display: inline-block;
+}
+#R8_s_nut_side_view_press_washer {
+    position: relative;
+    border-top: 22.5px solid transparent;
+    border-left: 14px solid black;
+    border-bottom: 22.5px solid transparent;
+}
+#R8_s_nut_side_view_head {
+    position: absolute;
+    background-color: grey;
+    width: 13px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    margin: -15px 0px 0px -9px;
+    border-radius: 3px;
+}
+
 /* small washer design */
+#R8_washer_top_view {
+    display: inline-block;
+}
 #R8_washer {
     display: inline-block;
     height: 40px;
@@ -187,4 +234,10 @@
     margin: -7.5px 0px 0px -7.5px;
     background-color: white;
     border-radius: 50%;
+}
+#R8_washer_side_view {
+    display: inline-block;
+    height: 40px;
+    width: 5px;
+    background-color: black;
 }
