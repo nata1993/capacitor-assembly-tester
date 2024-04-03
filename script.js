@@ -21,8 +21,11 @@ const bank_type3 = "64650581";
 const bank_type4 = "64410512";
 const bank_type5 = "64410539";
 
+// State for alert window, true = alert window open
+let state = false;
 // Filter input
 function Check_radio_input () {
+	state = true;
 	let radio_input_value;
 
 	// R7
@@ -127,8 +130,11 @@ function Apply_event_listeners () {
 	const text_input = document.getElementById('input');
 	text_input.addEventListener("keydown", Check_if_enter);
 	function Check_if_enter (e) {
-		if (e.code == "Enter") {
+		if (e.code == "Enter" && state != true) {
 			Check_radio_input();
+		} else {
+			state = false;
+			Alert_window_close();
 		}
 	}
 
