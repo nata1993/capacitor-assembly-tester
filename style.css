@@ -88,3 +88,7 @@ label {
   text-decoration: none;
   cursor: pointer;
 }
+
+.background_light_grey {
+	background-color: rgb(233, 233, 233);
+}
