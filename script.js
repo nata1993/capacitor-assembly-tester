@@ -165,3 +165,9 @@ function Alert_window_close () {
 	const alert_window = document.getElementById("alert_window_container");
 	alert_window.style.display = "none";
 }
+
+function Close_alert_window_button () {
+	state = false;
+	Alert_window_close();
+	Focus_on_input();
+}
