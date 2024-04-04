@@ -109,7 +109,6 @@ function Check_material_code_of_capacitor_bank (i_value, r_i_value) {
 		default:
 			Alert_window_open("INCORRECT INPUT!", false);
 	}
-	Focus_on_input();
 }
 
 // Reset input in case of accidental wrong input by user
@@ -144,7 +143,7 @@ function Apply_event_listeners () {
 	const html = document.getElementById('html');
 	html.addEventListener('keydown', Check_if_clicked_anywhere);
 	function Check_if_clicked_anywhere(e) {
-		if (e.code != "Tab") {
+		if (e.code != "Tab" && state != true) {
 			Focus_on_input();
 		}
 	}
