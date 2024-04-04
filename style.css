@@ -92,3 +92,7 @@ label {
 .background_light_grey {
 	background-color: rgb(233, 233, 233);
 }
+
+.background_light_grey p {
+	text-wrap: nowrap;
+}
