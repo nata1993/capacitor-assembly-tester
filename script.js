@@ -14,10 +14,12 @@ const R8_type2 = "3AUA0000049829";
 const R8_type3 = "3AUA0000050269";
 const R8_type4 = "3AUA0000050271";
 
-// Capacitor bank type
+// Capacitor bank type used for R7
 const bank_type1 = "64410504";
 const bank_type2 = "64410521";
 const bank_type3 = "64650581";
+
+// Capacitor bank type used for R8
 const bank_type4 = "64410512";
 const bank_type5 = "64410539";
 
