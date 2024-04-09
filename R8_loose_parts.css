@@ -1,8 +1,8 @@
 /* big nut design by James Tauber */
-#R10_b_nut_top_view {
+#R8_b_nut_top_view {
     display: inline-block;
 }
-#R10_b_nut_outer_ring {
+#R8_b_nut_outer_ring {
     display: inline-block;
     height: 65px;
     width: 65px;
@@ -10,31 +10,31 @@
     border-radius: 50%;
     position: relative;
 }
-#R10_b_nut_inner {
+#R8_b_nut_inner {
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -30px 0px 0px -26px;
 }
-#R10_b_nut_up {
+#R8_b_nut_up {
     width: 0;
     border-bottom: 15px solid grey;
     border-left: 26px solid transparent;
     border-right: 26px solid transparent;
 
 }
-#R10_b_nut_mid {
+#R8_b_nut_mid {
     width: 52px;
     height: 30px;
     background-color: grey;
 }
-#R10_b_nut_down {
+#R8_b_nut_down {
     width: 0;
     border-top: 15px solid grey;
     border-left: 26px solid transparent;
     border-right: 26px solid transparent;
 }
-#R10_b_nut_hole {
+#R8_b_nut_hole {
     position: absolute;
     height: 30px;
     width: 30px;
@@ -46,16 +46,16 @@
     display: inline-block;
 }
 
-#R10_b_nut_side_view {
+#R8_b_nut_side_view {
     display: inline-block;
 }
-#R10_b_nut_side_view_press_washer {
+#R8_b_nut_side_view_press_washer {
     position: relative;
     border-top: 32.5px solid transparent;
     border-left: 18px solid black;
     border-bottom: 32.5px solid transparent;
 }
-#R10_b_nut_side_view_head {
+#R8_b_nut_side_view_head {
     position: absolute;
     background-color: grey;
     width: 15px;
@@ -67,27 +67,27 @@
 }
 
 /* combined bolt design */
-#R10_kombi_side_view {
+#R8_kombi_side_view {
     display: inline-block;
 }
-#R10_kombi_side_head {
+#R8_kombi_side_head {
     background-color: black;
     width: 30px;
     height: 15px;
     margin-left: 3px;
 }
-#R10_kombi_side_mid {
+#R8_kombi_side_mid {
     background-color: black;
     width: 12px;
     height: 1px;
     margin-left: 12px;
 }
-#R10_kombi_side_washer {
+#R8_kombi_side_washer {
     background-color: black;
     width: 36px;
     height: 4px;
 }
-#R10_kombi_side_body {
+#R8_kombi_side_body {
     background-color: black;
     width: 12px;
     height: 20px;
@@ -96,41 +96,41 @@
     border-bottom-right-radius: 4px;
 }
 
-#R10_kombi_top_view {
+#R8_kombi_top_view {
     display: inline-block;
 }
-#R10_kombi_top_washer {
+#R8_kombi_top_washer {
     height: 45px;
     width: 45px;
     background-color: grey;
     border-radius: 50%;
     position: relative;
 }
-#R10_kombi_top_head {
+#R8_kombi_top_head {
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -20px 0px 0px -18px;
 }
-#R10_kombi_top_head_up {
+#R8_kombi_top_head_up {
     width: 0;
     border-bottom: 10px solid black;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
 
 }
-#R10_kombi_top_head_mid {
+#R8_kombi_top_head_mid {
     width: 36px;
     height: 20px;
     background-color: black;
 }
-#R10_kombi_top_head_down {
+#R8_kombi_top_head_down {
     width: 0;
     border-top: 10px solid black;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
 }
-#R10_kombi_top_torx{
+#R8_kombi_top_torx{
     position: absolute;
     height: 28px;
     width: 28px;
@@ -140,48 +140,48 @@
     background-color: grey;
     border-radius: 50%;
 }
-#R10_kombi_top_torx_symbol {
+#R8_kombi_top_torx_symbol {
     position: absolute;
     margin: -2px 0px 0px 5px;
     color: lightgrey;
 }
 
 /* small nut design with James Tauber method */
-#R10_s_nut_top_view {
+#R8_s_nut_top_view {
     display: inline-block;
 }
-#R10_s_nut_outer_ring  {
+#R8_s_nut_outer_ring  {
     height: 45px;
     width: 45px;
     background-color: black;
     border-radius: 50%;
     position: relative;
 }
-#R10_s_nut_inner {
+#R8_s_nut_inner {
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -20px 0px 0px -18px;
 }
-#R10_s_nut_up {
+#R8_s_nut_up {
     width: 0;
     border-bottom: 10px solid grey;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
 
 }
-#R10_s_nut_mid {
+#R8_s_nut_mid {
     width: 36px;
     height: 20px;
     background-color: grey;
 }
-#R10_s_nut_down {
+#R8_s_nut_down {
     width: 0;
     border-top: 10px solid grey;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
 }
-#R10_s_nut_hole {
+#R8_s_nut_hole {
     position: absolute;
     height: 15px;
     width: 15px;
@@ -193,16 +193,16 @@
     display: inline-block;
 }
 
-#R10_s_nut_side_view {
+#R8_s_nut_side_view {
     display: inline-block;
 }
-#R10_s_nut_side_view_press_washer {
+#R8_s_nut_side_view_press_washer {
     position: relative;
     border-top: 22.5px solid transparent;
     border-left: 14px solid black;
     border-bottom: 22.5px solid transparent;
 }
-#R10_s_nut_side_view_head {
+#R8_s_nut_side_view_head {
     position: absolute;
     background-color: grey;
     width: 13px;
@@ -214,10 +214,10 @@
 }
 
 /* small washer design */
-#R10_washer_top_view {
+#R8_washer_top_view {
     display: inline-block;
 }
-#R10_washer {
+#R8_washer {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -225,7 +225,7 @@
     border-radius: 50%;
     position: relative;
 }
-#R10_washer_hole {
+#R8_washer_hole {
     position: absolute;
     height: 15px;
     width: 15px;
@@ -235,7 +235,7 @@
     background-color: white;
     border-radius: 50%;
 }
-#R10_washer_side_view {
+#R8_washer_side_view {
     display: inline-block;
     height: 40px;
     width: 5px;
