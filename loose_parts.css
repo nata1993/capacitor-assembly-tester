@@ -69,24 +69,26 @@
 /* M6x12 combined bolt design */
 #M6x12_kombi_side_view {
     display: inline-block;
+    width: 45px;
+    height: 45px;
 }
 #M6x12_kombi_side_head {
     background-color: black;
     width: 30px;
-    height: 15px;
+    height: 18px;
     margin-left: 3px;
     border-radius: 3px;
 }
 #M6x12_kombi_side_mid {
     background-color: black;
     width: 12px;
-    height: 1px;
+    height: 2px;
     margin-left: 12px;
 }
 #M6x12_kombi_side_washer {
     background-color: black;
     width: 36px;
-    height: 4px;
+    height: 5px;
 }
 #M6x12_kombi_side_body {
     background-color: black;
@@ -99,6 +101,8 @@
 
 #M6x12_kombi_top_view {
     display: inline-block;
+    width: 45px;
+    height: 45px;
 }
 #M6x12_kombi_top_washer {
     height: 45px;
@@ -151,6 +155,8 @@
 /* M6 serpress nut design with James Tauber method */
 #M6_nut_top_view {
     display: inline-block;
+    width: 45px;
+    height: 45px;
 }
 #M6_nut_outer_ring  {
     display: inline-block;
@@ -197,7 +203,8 @@
 }
 
 #M6_nut_side_view {
-    display: inline-block;
+    width: 15px;
+    height: 45px;
 }
 #M6_nut_side_view_press_washer {
     position: relative;
@@ -208,11 +215,11 @@
 #M6_nut_side_view_head {
     position: absolute;
     background-color: grey;
-    width: 13px;
-    height: 30px;
+    width: 15px;
+    height: 35px;
     top: 50%;
     left: 50%;
-    margin: -15px 0px 0px -9px;
+    margin: -17.5px 0px 0px -10px;
     border-radius: 3px;
 }
 
