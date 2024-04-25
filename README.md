@@ -12,15 +12,15 @@ capacitor bank with some capacitors with wrong type.
 Capacitor banks have material code label on them. Essentially it is a kit code that consists of
 different required materials for assembly of the capacitor bank. Capacitors themselves also have
 a material code label on them. Under this material code is a capacitor with defined caracteristics.
-This tool allows to choose capacitor banks material code, essetially choosing what type of capacitors
+This tool allows to choose capacitor banks material code, essetnially choosing what type of capacitors
 must be used in the assembly. Then scanning material code on the capacitors with bar reader, will
 start the process of checking if the capacitor is suitable for specific bank assembly by verifying
-the capacitor and capacitor banks material code labels predefined combination. The output of this
-tool will be simple OK or NOK type feedback where if everything corresponds to the predefined rules,
-the screen will blink one with green colour and a text pops up with the scanned terms (material code,
-voltage rating, capacitance rating, required ammount). If any of the capacitors have incorrect
-material code label, the screen will blink with red and a text feedback that scanned capacitor
-is of incorrect type.
+the capacitor assembly and capacitor banks material code labels predefined combination. The output
+of this tool will be simple OK or NOK type feedback where if everything corresponds to the predefined
+rules, the screen will blink one with green colour and a text pops up with the scanned terms (material
+code, voltage rating, capacitance rating, required ammount). If any of the capacitors have incorrect
+material code label, the screen will blink with red and a text feedback that scanned capacitor is of
+incorrect type.
 
 ## Limitations
 
