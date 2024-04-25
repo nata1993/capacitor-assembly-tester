@@ -21,7 +21,6 @@
     border-bottom: 15px solid grey;
     border-left: 26px solid transparent;
     border-right: 26px solid transparent;
-
 }
 #M10_nut_mid {
     width: 52px;
@@ -122,7 +121,6 @@
     border-bottom: 10px solid black;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
-
 }
 #M6x12_kombi_top_head_mid {
     width: 36px;
@@ -146,10 +144,29 @@
     border-radius: 50%;
     display: inline-block;
 }
-#M6x12_kombi_top_torx_symbol {
-    position: absolute;
-    margin: -2px 0px 0px 5px;
-    color: lightgrey;
+#M6x12_kombi_top_view_torx {
+    --star-color: black;
+    --sqrt-3:1.73205080757;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    margin: -12px 0px 0px -11px;
+    position:relative;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: calc( 11px * var(--sqrt-3) ) solid var(--star-color);
+}  
+#M6x12_kombi_top_view_torx:after {
+    content:"";
+    position:absolute;
+    width: 0;
+    height: 0;
+    left: -11px;
+    top:calc( 11px * var(--sqrt-3) / 3 );
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: calc( 11px * var(--sqrt-3) ) solid var(--star-color);
 }
 
 /* M6 serpress nut design with James Tauber method */
