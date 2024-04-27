@@ -21,11 +21,3 @@ rules, the screen will blink one with green colour and a text pops up with the s
 code, voltage rating, capacitance rating, required ammount). If any of the capacitors have incorrect
 material code label, the screen will blink with red and a text feedback that scanned capacitor is of
 incorrect type.
-
-## Limitations
-
-The capacitors material code label may be printed of wrong capacitor type on the supplier side.
-This tool can not test for this. Because of this, visual inspection is required for voltage and
-capacitance ratings printed on the capacitors. The voltage and capacitance ratings are printed
-with much bigger font size, therefore easier to inspect for wrong capacitors in the capacitor
-bank assembly by visual means.
