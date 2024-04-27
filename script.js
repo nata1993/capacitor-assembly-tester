@@ -9,10 +9,8 @@ const R7_type2 = "3AUA0000049834";
 const R7_type3 = "3AUA0000050248";
 
 // Capacitor assembly type R8
-const R8_type1 = "3AUA0000049823";
-const R8_type2 = "3AUA0000049829";
-const R8_type3 = "3AUA0000050269";
-const R8_type4 = "3AUA0000050271";
+const R8_type1_2 = "3AUA0000049823_3AUA0000049829";
+const R8_type3_4 = "3AUA0000050269_3AUA0000050271";
 
 // Capacitor bank type used for R7
 const bank_type1 = "64410504";
@@ -40,14 +38,10 @@ function Check_radio_input () {
 	}
 
 	// R8
-	else if(document.getElementById('R8-49823').checked) {
-  		radio_input_value = R8_type1;
-	} else if(document.getElementById('R8-49829').checked) {
-  		radio_input_value = R8_type2;
-	} else if(document.getElementById('R8-50269').checked) {
-  		radio_input_value = R8_type3;
-	} else if(document.getElementById('R8-50271').checked) {
-  		radio_input_value = R8_type4;
+	else if(document.getElementById('R8-49823_49829').checked) {
+  		radio_input_value = R8_type1_2;
+	} else if(document.getElementById('R8-50269_50271').checked) {
+  		radio_input_value = R8_type3_4;
 	}
 
 	let input_value = document.getElementById("input").value;
@@ -89,19 +83,15 @@ function Check_material_code_of_capacitor_bank (i_value, r_i_value) {
 
 		// R8
 		case bank_type4:
-			if (r_i_value == "3AUA0000049823") {
-				Alert_window_open(`10PC - ${bank_type4} 4100${u}F 400V - OK!`, true);
-			} else if (r_i_value == "3AUA0000049829") {
-				Alert_window_open(`14PC - ${bank_type4} 4100${u}F 400V - OK!`, true);
+			if (r_i_value == "3AUA0000049823_3AUA0000049829") {
+				Alert_window_open(`10 - 14PC - ${bank_type4} 4100${u}F 400V - OK!`, true);
 			} else {
 				Alert_mismatch();
 			}
 		break;
 		case bank_type5:
-			if (r_i_value == "3AUA0000050269") {
-				Alert_window_open(`12PC - ${bank_type5}  4600${u}F 385V - OK!`, true);
-			} else if (r_i_value == "3AUA0000050271") {
-				Alert_window_open(`15PC - ${bank_type5}  4600${u}F 385V - OK!`, true);
+			if (r_i_value == "3AUA0000050269_3AUA0000050271") {
+				Alert_window_open(`12 - 15PC - ${bank_type5}  4600${u}F 385V - OK!`, true);
 			} else {
 				Alert_mismatch();
 			}
