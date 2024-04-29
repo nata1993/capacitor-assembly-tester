@@ -6,6 +6,9 @@ body {
 span {
 	font-weight: bold;
 }
+.blank_area {
+	height: 15px;
+}
 #ABB {
 	color: red;
 }
