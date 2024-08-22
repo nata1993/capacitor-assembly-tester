@@ -80,8 +80,8 @@ label {
 }
 #alert_window_close_button {
 	width: 60px;
-	heigth: 60px;
-	color: #black;
+	height: 60px;
+	color: black;
 	float: right;
 	font-size: 60px;
 	font-weight: bold;
